@@ -17,7 +17,7 @@ function Banner() {
           D-33
         </span>
       </div>
-      <h1 className="text-sm sm:text-xl md:text-3xl lg:text-3xl xl:text-3xl m-4">
+      <h1 className="text-sm sm:text-xl md:text-3xl lg:text-3xl xl:text-3xl m-8">
         Saturday, October 26, 2024 2:00PM
       </h1>
     </>
