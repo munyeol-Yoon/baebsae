@@ -1,6 +1,15 @@
 import BannerSVG from "./svg/BannerSVG";
 
-function Banner() {
+const Banner = () => {
+  const targetDate = new Date("2024-10-24T00:00:00");
+
+  const currentDate = new Date();
+
+  const timeDiff = targetDate.getTime() - currentDate.getTime();
+  const daysDiff = Math.ceil(timeDiff / (1000 * 3600 * 24));
+
+  const displayDaysDiff = daysDiff >= 0 ? daysDiff : 0;
+
   return (
     <>
       <section className="w-full">
@@ -14,7 +23,7 @@ function Banner() {
           최중수 | 유지영
         </span>
         <span className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
-          D-33
+          D-{displayDaysDiff}
         </span>
       </div>
       <h1 className="text-sm sm:text-xl md:text-3xl lg:text-3xl xl:text-3xl m-8">
@@ -22,6 +31,6 @@ function Banner() {
       </h1>
     </>
   );
-}
+};
 
 export default Banner;
