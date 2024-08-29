@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-const phoneNumberBride = "+8201033761750"; // 신부 전화번호
-const phoneNumberGroom = "+8201024592616"; // 신랑 전화번호
+const phoneNumberBride = import.meta.env.VITE_PHONE_NUMBER_BRIDE; // 신부 전화번호
+const phoneNumberGroom = import.meta.env.VITE_PHONE_NUMBER_GROOM; // 신랑 전화번호
 const messageBride = "지영아 정말 결혼 축하해!"; // 신부 보낼 메시지
 const messageGroom = "중수야 정말 결혼 축하해!"; // 신랑 보낼 메시지
 
