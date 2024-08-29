@@ -1,5 +1,6 @@
 import Banner from "./Banner";
 import Calender from "./Calender";
+import Call from "./Call";
 import GalleryWrap from "./Gallery/GalleryWrap";
 import Greeting from "./Greeting";
 import Invitation from "./Invitation";
@@ -13,6 +14,7 @@ function Main() {
         <Calender />
         <GalleryWrap />
         <Invitation />
+        <Call />
       </main>
     </>
   );
