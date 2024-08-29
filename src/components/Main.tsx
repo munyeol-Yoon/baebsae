@@ -1,4 +1,5 @@
 import { NavermapsProvider } from "react-naver-maps";
+import Account from "./Account/Account";
 import Banner from "./Banner";
 import Calender from "./Calender";
 import Call from "./Call";
@@ -20,6 +21,7 @@ function Main() {
         <Invitation />
         <Call />
         <Location />
+        <Account />
       </main>
     </NavermapsProvider>
   );
