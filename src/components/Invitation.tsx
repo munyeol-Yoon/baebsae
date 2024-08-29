@@ -1,15 +1,23 @@
+import { formatNewLine } from "../commons/formatNewLine";
+import data from "../data.json";
+
 function Invitation() {
+  const { greeting } = data;
+
   return (
     <section className="p-8 text-center">
       <h1 className="p-2">
-        최대화 · 위수란의 장남 <span className="font-bold">최중수</span>
+        {greeting.host.groom.parents[0].name} ·{" "}
+        {greeting.host.groom.parents[1].name}의 장남{" "}
+        <span className="font-bold">{greeting.host.groom.name}</span>
       </h1>
       <h1 className="p-2">
-        유장희 · 최진희의 막내 <span className="font-bold">유지영</span>
+        {greeting.host.bride.parents[0].name} ·{" "}
+        {greeting.host.bride.parents[1].name}의 막내{" "}
+        <span className="font-bold">{greeting.host.bride.name}</span>
       </h1>
       <div className="p-8">
-        <h2>2024년 10월 26일 (토) 12:30</h2>
-        <h2>천년컨벤션웨딩홀</h2>
+        <h2>{formatNewLine(greeting.eventDetail)}</h2>
       </div>
     </section>
   );

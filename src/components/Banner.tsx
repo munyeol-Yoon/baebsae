@@ -1,6 +1,9 @@
+import data from "../data.json";
 import BannerSVG from "./svg/BannerSVG";
 
 const Banner = () => {
+  const { greeting } = data;
+
   const targetDate = new Date("2024-10-24T00:00:00");
 
   const currentDate = new Date();
@@ -20,7 +23,7 @@ const Banner = () => {
           Invitation
         </h1>
         <span className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
-          최중수 | 유지영
+          {greeting.host.groom.name} | {greeting.host.bride.name}
         </span>
         <span className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
           D-{displayDaysDiff}
