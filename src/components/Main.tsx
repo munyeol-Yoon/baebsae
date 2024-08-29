@@ -3,6 +3,7 @@ import Account from "./Account/Account";
 import Banner from "./Banner";
 import Calender from "./Calender";
 import Call from "./Call";
+import Comment from "./Comment/Comment";
 import GalleryWrap from "./Gallery/GalleryWrap";
 import Greeting from "./Greeting";
 import Invitation from "./Invitation";
@@ -22,6 +23,7 @@ function Main() {
         <Call />
         <Location />
         <Account />
+        <Comment />
       </main>
     </NavermapsProvider>
   );
