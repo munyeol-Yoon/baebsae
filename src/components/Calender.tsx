@@ -18,7 +18,7 @@ function Calendar() {
 
   return (
     <section className="w-full max-w-4xl mx-auto p-4 bg-white rounded-lg shadow-lg m-4">
-      <h2 className="text-xl md:text-2xl font-serif text-center mb-4 text-[#FFD700]">
+      <h2 className="text-xl md:text-2xl font-serif text-center mb-4 text-[#e88ca6]">
         October 2024
       </h2>
       <div className="grid grid-cols-7 gap-2 text-center text-xs md:text-sm font-medium">
@@ -33,7 +33,7 @@ function Calendar() {
               key={index}
               className={`flex items-center justify-center p-2 md:p-4 rounded-full ${
                 day === weddingDay
-                  ? "bg-yellow-200 text-white font-bold"
+                  ? "bg-pink-200 text-white font-bold"
                   : "bg-gray-50 text-gray-800"
               } transition duration-300 ease-in-out`}
               style={{ aspectRatio: "1" }} // Ensuring square aspect ratio
